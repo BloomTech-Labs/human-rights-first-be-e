@@ -4,8 +4,9 @@ exports.up = (knex) => {
     .createTable('profiles', function (table) {
       table.string('id').notNullable().unique().primary();
       table.string('email');
-      table.string('name');
-      table.string('avatarUrl');
+      table.string('username');
+      table.string('password');
+
       table.timestamps(true, true);
     });
 };
