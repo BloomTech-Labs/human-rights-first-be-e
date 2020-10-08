@@ -36,5 +36,5 @@ exports.up = (knex) => {
 };
 
 exports.down = (knex) => {
-  return knex.schema.dropTableIfExists('type_of_force').dropTableIfExists('incident_type_of_force').dropTableIfExists('sources').dropTableIfExists('incident').dropTableIfExists('profiles');
+  return knex.schema.dropTableIfExists('profiles');
 };
