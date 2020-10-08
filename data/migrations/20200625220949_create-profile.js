@@ -25,16 +25,16 @@ exports.up = (knex) => {
       sources.string('src_type');
     })
     .createTable('incident_type_of_force', function (incident_type_of_force) {
-      incident_type_of_force.integer('itof_id').notNullable().unique().primary();
-      incident_type_of_force.integer('type_of_force_id').notNullable().unique()
-      incident_type_of_force.integer('incident_id').notNullable().unique()
+      // incident_type_of_force.integer('itof_id').notNullable().unique().primary();
+      incident_type_of_force.integer('type_of_force_id').notNullable().unique();
+      incident_type_of_force.integer('incident_id').notNullable().unique();
     })
     .createTable('type_of_force', function (type_of_force) {
-      type_of_force.integer('type_of_force_id').notNullable().unique().primary();
+      // type_of_force.integer('type_of_force_id').notNullable().unique().primary();
       type_of_force.string('type_of_force');
     });
 };
 
 exports.down = (knex) => {
-  return knex.schema.dropTableIfExists('type_of_force').dropTableIfExists('incident_type_of_force').dropTableIfExists('sources').dropTableIfExists('incident').dropTableIfExists('profiles');
+  return knex.schema.dropTableIfExists('type_of_force').dropTableIfExists('incident_type_of_force').dropTableIfExists('sources').dropTableIfExists('incident');
 };
