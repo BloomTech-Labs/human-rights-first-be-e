@@ -13,8 +13,7 @@ const makeProfileObj = (claims) => {
   return {
     id: claims.sub,
     email: claims.email,
-    username: claims.username,
-    password: claims.password,
+    name: claims.name,
   };
 };
 const findCreateProfile = async (jwt) => {

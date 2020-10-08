@@ -11,7 +11,7 @@ exports.up = function (knex) {
         table.timestamps(true, true);
       })
       .createTable('incident', (incident) => {
-        incident.integer('Incident_id').notNullable().unique().primary();
+        incident.integer('incident_id').notNullable().unique().primary();
         incident.string('city');
         incident.string('state');
         incident.float('lat').notNullable();
@@ -21,7 +21,7 @@ exports.up = function (knex) {
         incident.date('date');
       })
       .createTable('sources', (sources) => {
-        sources.integer('Incident_id').notNullable().unique().primary();
+        sources.integer('incident_id').notNullable().unique().primary();
         sources.integer('src_id');
         sources.string('src_url');
         sources.string('src_type');
