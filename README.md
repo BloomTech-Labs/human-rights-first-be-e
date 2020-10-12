@@ -1,107 +1,178 @@
-# Basic node API
+🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline, feel free to add your own flare to it.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/65e3a684cd28554d0383/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/labs-api-starter/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/65e3a684cd28554d0383/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/labs-api-starter/test_coverage)
+🚫 The numbers 1️⃣ through 5️⃣ next to each item represent the week that part of the docs needs to be completed by. Make sure to delete the numbers by the end of Labs.
 
-> **Disclaimer:** This application is currently in Beta mode and is not ready for
-> production. Please use at your own risk as things will change almost daily.
+🚫 Each student has a required minimum number of meaningful PRs each week per the rubric. Contributing to docs does NOT count as a PR to meet your weekly requirements.
 
-The following examples can be found in this project template.
+# 1️⃣ Human Rights First Police Use of Force Map
 
-- CRUD routes for a single resource
-- A Knex model providing CRUD methods for DB operations
-- Some route tests with mocks on the database calls
-- Okta authentication verification middleware
-- eslint setup and prettier formating.
-- Jest coverage setup
-- Inline Swagger docs with a live route at `/api-docs`
-- Github workflow config setup to run linting, tests and upload coverage to code climate
-- docker-compose file for spinning up postgresql db. (Win10 Home requires WSL)
+1️⃣ You can find the deployed project at [🚫URL NAME GOES HERE](🚫copy and paste URL here).
 
-## Requirements
+## 4️⃣ Contributors
 
-All [Labs Engineering Standards](https://labs.lambdaschool.com/topics/node-js/) must be followed.
+🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
-## API doc
+|                                                      [Student 1](https://github.com/)                                                       |                                                       [Student 2](https://github.com/)                                                        |                                                      [Student 3](https://github.com/)                                                       |                                                       [Student 4](https://github.com/)                                                        |                                                      [Student 5](https://github.com/)                                                       |
+| :-----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/) |
+|                                [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                                |                            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)                             |                          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Mister-Corn)                           |                          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/NandoTheessen)                           |                           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/wvandolah)                            |
+|                [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                |                 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                 |                [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                |                 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                 |                [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                |
 
-All routes can be viewed in the [/api-docs route](https:// /api-docs/)
-of your deploy (or locally).
+<br>
+<br>
 
-- https://localhost:8005/api-docs
+🚫 4️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
 
-Swagger docs are created using open api v3 notations. The docs are found inline
-on the router files in `api/**/*Router.js` and use the yaml notation format.
-The root of the docs is in `config/jsdoc.js` using the json format.
+![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
+![React](https://img.shields.io/badge/react-v16.7.0--alpha.2-blue.svg)
+![Typescript](https://img.shields.io/npm/types/typescript.svg?style=flat)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c4db1c-b10d-42c3-b157-3746edd9e81d/deploy-status)](netlify link goes in these parenthesis)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-The following libraries have been used to build and serve the swagger docs live.
+🚫 more info on using badges [here](https://github.com/badges/shields)
 
-- [express-ui](https://github.com/scottie1984/swagger-ui-express)
-- [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc)
+## Project Overview
 
-## Getting Started
+1️⃣ [Trello Board](https://trello.com/b/QD7rXL7v/labs25hrfthierry)
 
-### Enviornment Variables
+1️⃣ [Product Canvas](https://whimsical.com/47hccoy2w65yxpK8dSfpwz)
 
-- `PORT` - API port (optional, but helpful with FE running as well)
-- `DS_API_URL` - URL to a data science api. (eg. https://ds-bw-test.herokuapp.com/)
-- `DS_API_TOKEN` - authorization header token for data science api (eg. SUPERSECRET)
-- `DATABASE_URL` - connection string for postgres database
-- `OKTA_URL_ISSUER` - The complete issuer URL for verifying okta access tokens. `https://example.okta.com/oauth2/default`
-- `OKTA_CLIENT_ID` - the okta client ID.
+Our team is developing an interactive map that identifies potential instances of police use of force across the United States of America for Human Rights First, an independent advocacy and action organization.
 
-See .env.sample for example values
+We're pulling data from similiar APIs(All locations V2 - https://raw.githubusercontent.com/2020PB/police-brutality/data_build/all-locations-v2.json, 846- https://api.846policebrutality.com/api/incidents) and from Twitter and Reddit. We want to identify aggregate these instances.
 
-### Setup postgres
+### 4️⃣ Key Features
 
-There are 3 options to get postgresql installed locally [Choose one]:
+- feature one
+- feature two
+- feature three
+- feature four
+- feature five
 
-1. Use docker. [Install](https://docs.docker.com/get-docker/) for your platform
-    - run: `docker-compose up -d` to start up the postgresql database and pgadmin.
-    - Open a browser to [pgadmin](http://localhost:5050/) and you should see the Dev server already defined.
-    - If you need to start over you will need to delete the folder `$ rm -rf ./data/pg` as this is where all of the server data is stored.
-      - if the database `api-dev` was not created then start over.
-2. Download and install postgresql directly from the [main site](https://www.postgresql.org/download/)
-    - make note of the port, username and password you use to setup the database.
-    - Connect your client to the server manually using the values previously mentioned
-    - You will need to create a database manually using a client.
-    - Make sure to update the DATABASE_URL connection string with the values for username/password, databasename and server port (if not 5432).
-3. Setup a free account at [ElephantSQL](https://www.elephantsql.com/plans.html)
-    - Sign up for a free `Tiney Turtle` plan
-    - copy the URL to the DATABASE_URL .env variable
-    - make sure to add `?ssl=true` to the end of this url
+## 1️⃣ Tech Stack
 
-### Setup the application
+### Data Science API built using:
 
-- For Labs projects, clone the repo. Otherwise you can create a new repo using this as a template.
+#### _Data Science goes here_
 
-  - **note** please [be sure to set your remote](https://help.github.jp/enterprise/2.11/user/articles/changing-a-remote-s-url/) for this repo to point to your Labs Team Repository.
-  - Alternatively you can clone this repo then remove the git folder to initialize a new repo
+🚫 Why did you choose this framework?
 
-    ```bash
-    > git clone --depth=1 --branch=main git@github.com:Lambda-School-Labs/labs-api-starter.git NEW-REPO-NAME
-    > rm -rf ./NEW-REPO-NAME/.git
-    ```
+- Works well with FastAPI
+- Recommended to us
+- Wanted to learn an in-demand framework
 
-- run: `npm install` to download all dependencies.
-- run: `cp .env.sample .env` and update the enviornment variables to match your local setup.
-- run: `npm run knex migrate:latest` to create the starting schema.
-- run: `npm run knex seed:run` to populate your db with some data.
-- run: `npm run tests` to confirm all is setup and tests pass.
-- run: `npm run watch:dev` to start nodemon in local dev enviornment.
+🚫List the rest of the data science features and libraries in the same format as the framework above.
 
-> Make sure to update the details of the app name, description and version in
-> the `package.json` and `config/jsdoc.js` files.
+- Pandas
+- scikit-learn
+- spacy
+- nltk
+- PRAW
+- Tweepy
 
-## Contributing
+#### Data Science API deployed to AWS
 
-### ESLint and prettier
+#### [Back end](🚫link to back end repo here) built using:
 
-[ESLint](https://eslint.org/) and [prettier](https://prettier.io/) are already
-configured with Lambda Labs standards and ready to go. These must be ran from
-the CLI prior to commiting code in the following ways:
+#### 🚫 back end framework goes here (link to BE REPO)
 
-- `npm run lint` to view all purposed fixes.
-- `npm run lint:fix` to apply fixes to eslint issues.
-- `npm run format` to apply the standards defined by eslint/prettier config.
+- point one
+- point two
+- point three
 
-Alternatively you can install plugins for your editor of choice.
+🚫 List the rest of the back end end features and libraries in the same format as the framework above
+
+# APIs
+
+## 2️⃣ Data Science API
+
+We are sending json objects to the backend with information about instances of police use of force. This information includes location data (city, state, and geocode) and relevant details about the incident, like the type of force that was used.
+
+## 2️⃣ PRAW
+
+PRAW, The Python Reddit API Wrapper, makes it easy for users to analyze Reddit data. We used PRAW to scrape Reddit for potential instances of police of force.
+
+## 3️⃣ Tweepy
+
+Tweepy is a Python library that allows users to access the Twitter API. We used Tweepy to scan Twitter to find instances of police use of force.
+
+# 3️⃣ Environment Variables
+
+In order for the app to function correctly, the user must set up their own environment variables. There should be a .env file containing the following:
+
+🚫These are just examples, replace them with the specifics for your app
+
+    *  PRAW_CLIENT_ID  - keys for Reddit API
+    *  PRAW_CLIENT_SECRET - keys for Reddit API
+    *  PRAW_USER_AGENT - keys for Reddit API
+    *  TWEEPY_CONSUMER - keys for Twitter API
+    *  TWEEPY_SECRET - keys for Twitter API
+    *  TWEEPY_ACCESS - keys for Twitter API
+    *  TWEEPY_ACCESS_SECRET - keys for Twitter API
+
+# 5️⃣ Content Licenses
+
+🚫For all content - images, icons, etc, use this table to document permission of use. Remove the two placeholders and add you content to this table
+
+| Image Filename | Source / Creator | License                                                                      |
+| -------------- | ---------------- | ---------------------------------------------------------------------------- |
+| doodles.png    | Nicole Bennett   | [Creative Commons](https://www.toptal.com/designers/subtlepatterns/doodles/) |
+| rings.svg      | Sam Herbert      | [MIT](https://github.com/SamHerbert/SVG-Loaders)                             |
+
+# 4️⃣ Testing
+
+🚫Document what you used for testing and why
+
+# 4️⃣ Installation Instructions
+
+🚫explain how to install the required dependencies to get this project up and running with yarn and NPM
+
+## Other Scripts
+
+🚫replace these examples with your own
+
+    * typecheck - runs the TypeScript compiler
+    * build - creates a build of the application
+    * start - starts the production server after a build is created
+    * test - runs tests in **tests** directory \* eject - copy the configuration files and dependencies into the project so you have full control over them
+
+# Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+
+Please note we have a [code of conduct](./CODE_OF_CONDUCT.md). Please follow it in all your interactions with the project.
+
+## Issue/Bug Request
+
+**If you are having an issue with the existing project code, please submit a bug report under the following guidelines:**
+
+- Check first to see if your issue has already been reported.
+- Check to see if the issue has recently been fixed by attempting to reproduce the issue using the latest master branch in the repository.
+- Create a live example of the problem.
+- Submit a detailed bug report including your environment & browser, steps to reproduce the issue, actual and expected outcomes, where you believe the issue is originating from, and any potential solutions you have considered.
+
+### Feature Requests
+
+We would love to hear from you about new features which would improve this app and further the aims of our project. Please provide as much detail and information as possible to show us why you think your new feature should be implemented.
+
+### Pull Requests
+
+If you have developed a patch, bug fix, or new feature that would improve this app, please submit a pull request. It is best to communicate your ideas with the developers first before investing a great deal of time into a pull request to ensure that it will mesh smoothly with the project.
+
+Remember that this project is licensed under the MIT license, and by submitting a pull request, you agree that your work will be, too.
+
+#### Pull Request Guidelines
+
+- Ensure any install or build dependencies are removed before the end of the layer when doing a build.
+- Update the README.md with details of changes to the interface, including new plist variables, exposed ports, useful file locations and container parameters.
+- Ensure that your code conforms to our existing code conventions and test coverage.
+- Include the relevant issue number, if applicable.
+- You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
+
+### Attribution
+
+These contribution guidelines have been adapted from [this good-Contributing.md-template](https://gist.github.com/PurpleBooth/b24679402957c63ec426).
+
+## Documentation
+
+See [Backend Documentation](🚫*link to your backend readme here*) for details on the backend of our project.
