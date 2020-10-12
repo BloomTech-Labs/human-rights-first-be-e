@@ -1,7 +1,7 @@
 exports.up = function (knex) {
   return knex.schema
     .raw('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"')
-    .createTable('incidents', incidents => {
+    .createTable('incidents', (incidents) => {
       incidents.increments('incident_id');
       incidents.integer('ds_uuid').unique().notNullable();
       incidents.string('city');
