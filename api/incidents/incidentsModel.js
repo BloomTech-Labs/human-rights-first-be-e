@@ -11,6 +11,6 @@ function getAllIncidents() {
 }
 
 function createIncident(incident) {
-    return db('incidents').insert(incident)
-
+    return db('incidents')
+    .insert(incident)
 }
