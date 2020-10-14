@@ -3,13 +3,13 @@ exports.up = function (knex) {
     .raw('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"')
     .createTable('incidents', (incidents) => {
       incidents.increments('incident_id');
-      incidents.integer('ds_uuid').unique().notNullable();
-      incidents.string('city');
-      incidents.string('state');
+      incidents.string('ds_uuid').unique().notNullable();
+      incidents.string('city').notNullable();
+      incidents.string('state').notNullable();
       incidents.float('lat').notNullable();
       incidents.float('long').notNullable();
       incidents.string('title').notNullable();
-      incidents.string('desc');
+      incidents.varchar('desc', [1000]);
       incidents.date('date');
     })
     .createTable('sources', (sources) => {
