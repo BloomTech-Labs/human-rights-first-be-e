@@ -15,7 +15,7 @@ router.get('/showallincidents', (req, res) => {
     });
 });
 
-router.post('/createincidents', validateIncidents, (req, res) => {
+router.post('/createincidents', (req, res) => {
   console.log(req.body);
   req.body.forEach((incident) => {
     console.log('incident', incident);
@@ -32,10 +32,29 @@ router.post('/createincidents', validateIncidents, (req, res) => {
 });
 
 router.get('/sources', (req, res) => {
-  console.log('res', res);
   Incidents.getAllSources()
-    .then((res) => {
-      res.status(201).json(res);
+    .then((response) => {
+      res.status(201).json(response);
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
+});
+
+router.get('/tags', (req, res) => {
+  Incidents.getAllTags()
+    .then((response) => {
+      res.status(200).json(response);
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
+});
+
+router.get('/tagtypes', (req, res) => {
+  Incidents.getAllTagTypes()
+    .then((response) => {
+      res.status(200).json(response);
     })
     .catch((err) => {
       res.status(500).json(err);
