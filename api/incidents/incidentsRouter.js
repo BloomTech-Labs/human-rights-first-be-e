@@ -15,8 +15,7 @@ router.get('/showallincidents', (req, res) => {
     });
 });
 
-router.post('/createincidents', (req, res) => {
-  console.log(req.body);
+router.post('/createincidents', validateIncidents, (req, res) => {
   req.body.forEach((incident) => {
     console.log('incident', incident);
     Incidents.createIncident(incident)

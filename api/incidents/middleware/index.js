@@ -17,10 +17,8 @@ function validateIncidents(req, res, next) {
       incident.date
     ) {
       const uuid = db('incidents').where('ds_uuid', incident.ds_uuid);
-      if (!uuid) return incident;
+      if (!uuid[0]) return incident;
     }
   });
-  console.log(req.body)
   next();
 }
-
