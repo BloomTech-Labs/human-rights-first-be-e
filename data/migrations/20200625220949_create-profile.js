@@ -13,8 +13,8 @@ exports.up = function (knex) {
       incidents.date('date');
     })
     .createTable('sources', (sources) => {
-      sources.increments('incident_id').notNullable().unique().primary();
-      sources.integer('src_id');
+      sources.increments('src_id').notNullable().unique().primary();
+      sources.integer('incident_id');
       sources.string('src_url');
       sources.string('src_type');
     })

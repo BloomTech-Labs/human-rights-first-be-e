@@ -1,3 +1,5 @@
+const db = require('../../../data/db-config');
+
 module.exports = {
   validateIncidents,
 };
@@ -14,8 +16,10 @@ function validateIncidents(req, res, next) {
       incident.desc &&
       incident.date
     ) {
-      return incident;
+      const uuid = db('incidents').where('ds_uuid', incident.ds_uuid);
+      if (!uuid) return incident;
     }
   });
+  console.log(req.body)
   next();
 }

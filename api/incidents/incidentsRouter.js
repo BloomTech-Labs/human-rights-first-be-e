@@ -15,16 +15,20 @@ router.get('/showallincidents', (req, res) => {
     });
 });
 
-router.post('/incidents', validateIncidents, (req, res) => {
-  Incidents.createIncident(req.body)
+router.post('/createincidents', validateIncidents, (req, res) => {
+  console.log(req.body);
+  req.body.forEach((incident) => {
+    console.log('incident', incident);
+    Incidents.createIncident(incident)
 
-    .then((post) => {
-      res.status(201).json(post);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json({ message: 'Error creating Record' });
-    });
+      .then((post) => {
+        res.status(201).json(post);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json({ message: 'Error creating Record' });
+      });
+  });
 });
 
 router.get('/sources', (req, res) => {
