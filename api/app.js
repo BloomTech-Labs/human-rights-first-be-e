@@ -11,6 +11,7 @@ const dotenv = require('dotenv');
 const config_result = dotenv.config();
 const cron = require('node-cron');
 const axios = require('axios');
+const incidentModel = require('./incidents/incidentsModel');
 
 if (process.env.NODE_ENV != 'production' && config_result.error) {
   throw config_result.error;
@@ -26,6 +27,7 @@ const indexRouter = require('./index/indexRouter');
 const profileRouter = require('./profile/profileRouter');
 const dsRouter = require('./dsService/dsRouter');
 const incidentsRouter = require('./incidents/incidentsRouter');
+const incidentsModel = require('./incidents/incidentsModel');
 
 const app = express();
 
@@ -84,23 +86,18 @@ app.use(function (err, req, res, next) {
   next(err);
 });
 
-cron.schedule('*/5 * * * *', () => {
+cron.schedule('*/30 * * * *', () => {
   axios
     .get(
       'http://labs27hrfc.eba-yuwhygds.us-east-1.elasticbeanstalk.com/getdata'
     )
     .then((response) => {
-      axios
-        .post('localhost:8001/incidents/createincidents', response.data)
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      response.data.forEach((element) => {
+        incidentsModel.createIncident(element);
+      });
     })
     .catch((err) => {
-      console.log(err);
+      console.log('Server Error');
     });
 });
 

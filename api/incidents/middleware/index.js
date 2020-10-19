@@ -10,14 +10,14 @@ function validateIncidents(req, res, next) {
       incident.lat &&
       incident.long &&
       incident.city &&
-      incident.ds_uuid &&
+      incident.id &&
       incident.state &&
       incident.title &&
       incident.desc &&
       incident.date
     ) {
-      const uuid = db('incidents').where('ds_uuid', incident.ds_uuid);
-      if (!uuid[0]) return incident;
+      const id = db('incidents').where('id', incident.id);
+      if (!id[0]) return incident;
     }
   });
   next();
