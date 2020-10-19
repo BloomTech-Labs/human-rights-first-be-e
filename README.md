@@ -1,53 +1,31 @@
-🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline, feel free to add your own flare to it.
+# Human Rights First: Police Brutality Across America
 
-🚫 The numbers 1️⃣ through 5️⃣ next to each item represent the week that part of the docs needs to be completed by. Make sure to delete the numbers by the end of Labs.
+You can find the deployed project at [Human Rights First - Police Brutality Across America](https://main.d17v0exvwwwzgz.amplifyapp.com/).
 
-🚫 Each student has a required minimum number of meaningful PRs each week per the rubric. Contributing to docs does NOT count as a PR to meet your weekly requirements.
+## Contributors
 
-# 1️⃣ Human Rights First Police Use of Force Map
-
-1️⃣ You can find the deployed project at [🚫URL NAME GOES HERE](🚫copy and paste URL here).
-
-## 4️⃣ Contributors
-
-🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
-
-|                                                      [Student 1](https://github.com/)                                                       |                                                       [Student 2](https://github.com/)                                                        |                                                      [Student 3](https://github.com/)                                                       |                                                       [Student 4](https://github.com/)                                                        |                                                      [Student 5](https://github.com/)                                                       |
+|                                                      [Matthew Molloy](https://github.com/)                                                       |                                                       [Jason Schwartz](https://github.com/)                                                        |                                                      [Emilio Diaz-Goico](https://github.com/)                                                       |                                                       [Steele Helbling](https://github.com/)                                                        |     |                                                 
 | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
-| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/) |
+| [<img src="https://ca.slack-edge.com/ESZCHB482-W012H6TKTBP-791655a057b9-512" width = "200" />](https://github.com/) | [<img src="https://ca.slack-edge.com/ESZCHB482-W012QNY40TW-13608abc8792-512" width = "200" />](https://github.com/) | [<img src="https://ca.slack-edge.com/ESZCHB482-W012JQ52B0B-dbe5d49f721f-512" width = "200" />](https://github.com/) | [<img src="https://ca.slack-edge.com/ESZCHB482-W0123RSMJQP-dd8a48c8def2-512" width = "200" />](https://github.com/) | [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "0" />](https://github.com/) |
 |                                [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                                |                            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)                             |                          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Mister-Corn)                           |                          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/NandoTheessen)                           |                           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/wvandolah)                            |
 |                [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                |                 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                 |                [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                |                 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                 |                [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)                |
 
 <br>
 <br>
 
-🚫 4️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
-
-![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![React](https://img.shields.io/badge/react-v16.7.0--alpha.2-blue.svg)
-![Typescript](https://img.shields.io/npm/types/typescript.svg?style=flat)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c4db1c-b10d-42c3-b157-3746edd9e81d/deploy-status)](netlify link goes in these parenthesis)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
-🚫 more info on using badges [here](https://github.com/badges/shields)
 
 ## Project Overview
 
-1️⃣ [Trello Board](https://trello.com/b/QD7rXL7v/labs25hrfthierry)
+[Trello Board](https://trello.com/b/QWXanExQ/team-c-2009)
 
-1️⃣ [Product Canvas](https://whimsical.com/47hccoy2w65yxpK8dSfpwz)
+[Technical Architecture and Userflow](https://whimsical.com/8sQcpjw3K2XdAiM9aeMkft)
 
-Our team is developing an interactive map that identifies potential instances of police use of force across the United States of America for Human Rights First, an independent advocacy and action organization.
+Our team is developing an interactive map that identifies instances of police use of force across the United States of America for Human Rights First, an independent advocacy and action organization.
 
-We're pulling data from similiar APIs(All locations V2 - https://raw.githubusercontent.com/2020PB/police-brutality/data_build/all-locations-v2.json, 846- https://api.846policebrutality.com/api/incidents) and from Twitter and Reddit. We want to identify aggregate these instances.
+### Key Features
 
-### 4️⃣ Key Features
-
-- feature one
-- feature two
-- feature three
-- feature four
-- feature five
+- User can view incidents of police brutality and get more information on specific incidents
+- User can seearch map based on type of force, location, and date 
 
 ## 1️⃣ Tech Stack
 
@@ -75,9 +53,38 @@ We're pulling data from similiar APIs(All locations V2 - https://raw.githubuserc
 #### [Back end](🚫link to back end repo here) built using:
 
 #### 🚫 back end framework goes here (link to BE REPO)
-
-#### Body
-      
+### dependencies
+    "@okta/jwt-verifier": "^1.0.0",
+    "axios": "^0.19.2",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "helmet": "^3.23.1",
+    "http-errors": "~1.6.3",
+    "knex": "^0.21.6",
+    "morgan": "~1.9.1",
+    "pg": "^8.2.1",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+### devDependencies 
+    "cross-env": "^7.0.2",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest": "^23.17.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.2.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "supertest": "^4.0.2"
+  
 ### incidents table 
 
 | Name        | Type       | Required | Description                                          |
@@ -116,6 +123,7 @@ We're pulling data from similiar APIs(All locations V2 - https://raw.githubuserc
 | type_of_force_id | increments | No       | key tells it what incident_type_of_force it is       |
 | type_of_force    | String     | No       | gives type of force tag                              |
 
+#### Example
 ```javascript
 {
     "incident_id": "Test",
@@ -129,8 +137,166 @@ We're pulling data from similiar APIs(All locations V2 - https://raw.githubuserc
     "date": "test"
 }
 ```
-🚫 List the rest of the back end end features and libraries in the same format as the framework above
+#### Responses:
 
+> Will receive a **200 (OK)** response with an array of incidents if the request is successful
+
+```javascript
+[
+  {
+    "incident_id": "Test",
+    "id": "Test",
+    "city": "test",
+    "state": "test"
+    "lat": "test"
+    "long": "test"
+    "title": "test"
+    "desc": "test"
+    "date": "test"
+  },
+  {
+    "incident_id": "Test",
+    "id": "Test",
+    "city": "test",
+    "state": "test"
+    "lat": "test"
+    "long": "test"
+    "title": "test"
+    "desc": "test"
+    "date": "test"
+  },
+];
+```
+> Will receive a **500 (Internal Server Error)** response if there is an issue with grabing the data
+
+```javascript
+{
+  "message": "Request Error"
+}
+```
+
+---
+
+> Will receive a **201 (Created)** response along wtih the newly created incident if successful
+
+```javascript
+[
+  {
+    "incident_id": "Test",
+    "id": "Test",
+    "city": "test",
+    "state": "test"
+    "lat": "test"
+    "long": "test"
+    "title": "test"
+    "desc": "test"
+    "date": "test"
+  },
+];
+```
+
+> Will receive a **500 (Internal Server Error)** response if there is an issue with the API server
+
+```javascript
+{
+    "message": "Error creating Record"
+}
+```
+---
+
+> Will receive a **200 (OK)** response with an array of sources if the request is successful
+
+```javascript
+[
+  {
+    "src_id": "Test",
+    "incident_id": "Test",
+    "src_url": "test",
+    "src_type": "test"
+  },
+  {
+    "src_id": "Test",
+    "incident_id": "Test",
+    "src_url": "test",
+    "src_type": "test"
+
+  },
+  {
+    "src_id": "Test",
+    "incident_id": "Test",
+    "src_url": "test",
+    "src_type": "test"
+  },
+];
+```
+> Will receive a **500 (Internal Server Error)** response if there is an issue with grabing the data
+
+```javascript
+{
+  "message": "Request Error"
+}
+```
+
+---
+> Will receive a **200 (OK)** response with an array of tags if the request is successful
+
+```javascript
+[
+  {
+    "itof_id": "Test",
+    "type_of_force_id": "Test",
+    "incident_id": "test",
+  },
+  {
+    "itof_id": "Test",
+    "type_of_force_id": "Test",
+    "incident_id": "test",
+
+  },
+  {
+    "itof_id": "Test",
+    "type_of_force_id": "Test",
+    "incident_id": "test",
+  },
+];
+```
+> Will receive a **500 (Internal Server Error)** response if there is an issue with grabing the data
+
+```javascript
+{
+  "message": "Request Error"
+}
+```
+
+---
+> Will receive a **200 (OK)** response with an array of tagtypes if the request is successful
+
+```javascript
+[
+  {
+    "type_of_force_id": "test"
+    "type_of_force": "test"
+  },
+  {
+    "type_of_force_id": "test"
+    "type_of_force": "test"
+
+  },
+  {
+    "type_of_force_id": "test"
+    "type_of_force": "test"
+  },
+];
+```
+> Will receive a **500 (Internal Server Error)** response if there is an issue with grabing the data
+
+```javascript
+{
+  "message": "Request Error"
+}
+```
+
+---
 # APIs
 
 ## 2️⃣ Data Science API
@@ -149,42 +315,19 @@ Tweepy is a Python library that allows users to access the Twitter API. We used 
 
 In order for the app to function correctly, the user must set up their own environment variables. There should be a .env file containing the following:
 
+    *  REACT_APP_MAPBOX_TOKEN=
 
-🚫These are just examples, replace them with the specifics for your app
+# Testing
 
-    *  PRAW_CLIENT_ID  - keys for Reddit API
-    *  PRAW_CLIENT_SECRET - keys for Reddit API
-    *  PRAW_USER_AGENT - keys for Reddit API
-    *  TWEEPY_CONSUMER - keys for Twitter API
-    *  TWEEPY_SECRET - keys for Twitter API
-    *  TWEEPY_ACCESS - keys for Twitter API
-    *  TWEEPY_ACCESS_SECRET - keys for Twitter API
+No testing implemented as of October 16th, 2020. 
 
-# 5️⃣ Content Licenses
+# Installation Instructions
 
-🚫For all content - images, icons, etc, use this table to document permission of use. Remove the two placeholders and add you content to this table
-
-| Image Filename | Source / Creator | License                                                                      |
-| -------------- | ---------------- | ---------------------------------------------------------------------------- |
-| doodles.png    | Nicole Bennett   | [Creative Commons](https://www.toptal.com/designers/subtlepatterns/doodles/) |
-| rings.svg      | Sam Herbert      | [MIT](https://github.com/SamHerbert/SVG-Loaders)                             |
-
-# 4️⃣ Testing
-
-🚫Document what you used for testing and why
-
-# 4️⃣ Installation Instructions
-
-🚫explain how to install the required dependencies to get this project up and running with yarn and NPM
+Run 'npm install' to install all necessary dependencies. 
 
 ## Other Scripts
 
-🚫replace these examples with your own
-
-    * typecheck - runs the TypeScript compiler
-    * build - creates a build of the application
-    * start - starts the production server after a build is created
-    * test - runs tests in **tests** directory \* eject - copy the configuration files and dependencies into the project so you have full control over them
+    * node server.js - must be executed from /server folder - runs local server for development 
 
 # Contributing
 
@@ -225,4 +368,6 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Backend Documentation](🚫*link to your backend readme here*) for details on the backend of our project.
+See [Frontend Documentation](https://github.com/Lambda-School-Labs/Labs27-C-HRF-FE) for details on the frontend of our project.
+      
+
