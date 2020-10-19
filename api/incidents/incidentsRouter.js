@@ -6,7 +6,15 @@ const { validateIncidents } = require('./middleware/index');
 
 router.get('/showallincidents', (req, res) => {
   Incidents.getAllIncidents()
-    .then((incidents) => {
+    .then((response) => {
+      const incidents = response.map((incident) => {
+        const sources = Incidents.createSourcesArray(incident.incident_id);
+        console.log("incident.incident_id", incident.incident_id)
+        return {
+          ...incident,
+          src: sources,
+        };
+      });
       res.json(incidents);
     })
     .catch((err) => {
