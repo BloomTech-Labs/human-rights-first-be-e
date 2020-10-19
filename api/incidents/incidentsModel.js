@@ -15,8 +15,12 @@ async function getAllIncidents() {
 }
 
 async function getSources(incidents) {
-  const feIncidents = await incidents.map((incident) => {
-    incident.src = createSourcesArray(incident.incident_id)
+  const feIncidents = await incidents.map(function(incident) {
+     const incidentSrc = createSourcesArray(incident.incident_id)
+     console.log("getSources -> incidentSrc", incidentSrc)
+     return {
+       ...incident, incidentSrc
+     }
   })
 
   console.log("fe", feIncidents)
@@ -25,7 +29,7 @@ async function getSources(incidents) {
 }
 
 async function createSourcesArray(incident_id) {
-  const sources = await db('sources').where('sources.incident_id', incident_id)
+  const sources = await db('sources').select('*').where('sources.incident_id', incident_id)
   console.log("sources", sources)
   return sources
 }
