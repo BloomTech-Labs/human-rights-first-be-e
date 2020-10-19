@@ -8,9 +8,26 @@ module.exports = {
   getAllTagTypes,
 };
 
-function getAllIncidents() {
-  // return db('incidents').select('*').join('sources', 'incidents.incident_id', 'sources.incident_id' )
-  return db('incidents')
+async function getAllIncidents() {
+  const incidents = await db('incidents')
+
+  return getSources(incidents)
+}
+
+async function getSources(incidents) {
+  const feIncidents = await incidents.map((incident) => {
+    incident.src = createSourcesArray(incident.incident_id)
+  })
+
+  console.log("fe", feIncidents)
+
+  return feIncidents
+}
+
+async function createSourcesArray(incident_id) {
+  const sources = await db('sources').where('sources.incident_id', incident_id)
+  console.log("sources", sources)
+  return sources
 }
 
 async function createIncident(incident) {
