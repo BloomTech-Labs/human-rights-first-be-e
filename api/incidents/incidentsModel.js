@@ -9,12 +9,13 @@ module.exports = {
 };
 
 function getAllIncidents() {
-  return db('incidents');
+  // return db('incidents').select('*').join('sources', 'incidents.incident_id', 'sources.incident_id' )
+  return db('incidents')
 }
 
 async function createIncident(incident) {
   const newIncident = {
-    ds_uuid: incident.ds_uuid,
+    id: incident.id,
     city: incident.city,
     state: incident.state,
     title: incident.title,

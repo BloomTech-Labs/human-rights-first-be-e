@@ -3,7 +3,7 @@ exports.up = function (knex) {
     .raw('CREATE EXTENSION IF NOT EXISTS "uuid-ossp"')
     .createTable('incidents', (incidents) => {
       incidents.increments('incident_id');
-      incidents.string('ds_uuid').unique().notNullable();
+      incidents.string('id').unique().notNullable();
       incidents.string('city').notNullable();
       incidents.string('state').notNullable();
       incidents.float('lat').notNullable();
