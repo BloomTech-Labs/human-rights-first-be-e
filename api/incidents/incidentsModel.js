@@ -6,11 +6,29 @@ module.exports = {
   getAllSources,
   getAllTags,
   getAllTagTypes,
+  createSourcesArray
 };
 
-function getAllIncidents() {
-  // return db('incidents').select('*').join('sources', 'incidents.incident_id', 'sources.incident_id' )
-  return db('incidents')
+async function getAllIncidents() {
+  return await db('incidents')
+}
+
+// async function getSources(incidents) {
+//   const feIncidents = await incidents.map(async function(incident) {
+//      const incidentSrc = await createSourcesArray(incident.incident_id)
+//      console.log("getSources -> incidentSrc", incidentSrc)
+//      return {
+//        ...incident, incidentSrc
+//      }
+//   })
+//   console.log('getSources -> feIncidents', feIncidents);
+//   return feIncidents
+// }
+
+async function createSourcesArray(incident_id) {
+  const sources = await db('sources').select('*').where('sources.incident_id', incident_id)
+  console.log("sources", sources)
+  return sources
 }
 
 async function createIncident(incident) {

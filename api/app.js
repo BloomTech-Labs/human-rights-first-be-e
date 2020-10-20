@@ -1,4 +1,4 @@
-const createError = require('http-errors');
+const createError = require('http-errors')
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
@@ -10,7 +10,7 @@ const jsdocConfig = require('../config/jsdoc');
 const dotenv = require('dotenv');
 const config_result = dotenv.config();
 const cron = require('node-cron');
-const axios = require('axios');
+const axios = require('axios')
 const incidentModel = require('./incidents/incidentsModel');
 
 if (process.env.NODE_ENV != 'production' && config_result.error) {
@@ -86,19 +86,17 @@ app.use(function (err, req, res, next) {
   next(err);
 });
 
-cron.schedule('*/30 * * * *', () => {
-  axios
-    .get(
-      'http://labs27hrfc.eba-yuwhygds.us-east-1.elasticbeanstalk.com/getdata'
-    )
-    .then((response) => {
-      response.data.forEach((element) => {
-        incidentsModel.createIncident(element);
-      });
-    })
-    .catch((err) => {
-      console.log('Server Error');
-    });
-});
+// cron.schedule('*/30 * * * *', () => {
+//   axios
+//     .get(process.env.DS_API_URL)
+//     .then((response) => {
+//       response.data.forEach((element) => {
+//         incidentsModel.createIncident(element);
+//       });
+//     })
+//     .catch((err) => {
+//       console.log('Server Error');
+//     });
+// });
 
 module.exports = app;
