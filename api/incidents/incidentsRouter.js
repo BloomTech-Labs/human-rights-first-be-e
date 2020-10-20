@@ -114,9 +114,10 @@ router.post('/fetchfromds', (req, res) => {
       response.data.forEach((element) => {
         Incidents.createIncident(element);
       });
+      res.json({message: 'complete'})
     })
     .catch((err) => {
-      console.log('Server Error');
+      res.json(error)
     });
 })
 
