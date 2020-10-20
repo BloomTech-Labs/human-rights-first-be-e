@@ -30,6 +30,7 @@ const incidentsModel = require('./incidents/incidentsModel');
 
 //###[ Models ]###
 const incidentModel = require('./incidents/incidentsModel');
+const { dsFetch } = require('./dsService/dsUtil');
 
 const app = express();
 
@@ -90,16 +91,7 @@ app.use(function (err, req, res, next) {
 
 // cron job to retrieve data from DS API
 cron.schedule('* * 12 * *', () => {
-  axios
-    .get(process.env.DS_API_URL)
-    .then((response) => {
-      response.data.forEach((element) => {
-        incidentsModel.createIncident(element);
-      });
-    })
-    .catch((err) => {
-      console.log('Server Error');
-    });
+  dsFetch()
 });
 
 module.exports = app;

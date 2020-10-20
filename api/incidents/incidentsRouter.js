@@ -1,5 +1,8 @@
 const express = require('express');
 const router = express.Router();
+const axios = require('axios')
+
+// Model and util imports
 const Incidents = require('./incidentsModel');
 const { post } = require('../dsService/dsRouter');
 const { validateIncidents } = require('./middleware/index');
@@ -92,5 +95,29 @@ router.get('/tagtypes', (req, res) => {
       res.status(500).json(err);
     });
 });
+
+// ###Utility Routes###
+router.delete('/cleardb', (req, res) => {
+  Incidents.deleteDB()
+  .then(response => {
+    res.json({message: 'All database contents have been deleted'})
+  })
+  .catch(error => {
+    res.json(error)
+  })
+})
+
+router.post('/fetchfromds', (req, res) => {
+  axios
+    .get(process.env.DS_API_URL)
+    .then((response) => {
+      response.data.forEach((element) => {
+        Incidents.createIncident(element);
+      });
+    })
+    .catch((err) => {
+      console.log('Server Error');
+    });
+})
 
 module.exports = router;
