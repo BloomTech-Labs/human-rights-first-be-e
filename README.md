@@ -76,7 +76,7 @@ Our team is developing an interactive map that identifies instances of police us
 | Name        | Type       | Required | Description                                          |
 | ----------- | ---------- | -------- | ---------------------------------------------------- |
 | incident_id | increments | Yes      | records the number of the entreys                    |
-| ds_uuid     | String     | Yes      | gives it unque id                                    |
+| id          | String     | Yes      | gives it unque id                                    |
 | city        | String     | Yes      | gives the city the incident took place               |
 | state       | String     | Yes      | gives the state the incident took place              |
 | lat         | float      | Yes      | gives the latitude of the incident on the world map  |
@@ -113,7 +113,7 @@ Our team is developing an interactive map that identifies instances of police us
 ```javascript
 {
     "incident_id": "Test",
-    "ds_uuid": "Test",
+    "id": "Test",
     "city": "test",
     "state": "test"
     "lat": "test"
