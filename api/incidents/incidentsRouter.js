@@ -4,40 +4,46 @@ const Incidents = require('./incidentsModel');
 const { post } = require('../dsService/dsRouter');
 const { validateIncidents } = require('./middleware/index');
 
-router.get('/showallincidents', (req, res) => {
-  Incidents.getAllIncidents()
-    .then((response) => {
-      const incidents = response.map((incident) => {
-        const sources = Incidents.createSourcesArray(incident.incident_id);
-        console.log("incident.incident_id", incident.incident_id)
-        return {
-          ...incident,
-          src: sources,
-        };
-      });
-      res.json(incidents);
+// ###Incidents Routes###
+router.get('/showallincidents', async (req, res) => {
+  try {
+    const incidents = await Incidents.getAllIncidents();
+    const sources = await Incidents.getAllSources();
+    
+    const responseArray = []
+    
+    // Reconstructs the incident object with it's sources to send to front end
+    incidents.forEach((incident) => {
+      incident['src'] = []
+      sources.forEach(source => {
+        if(source.incident_id === incident.incident_id) {
+          incident.src.push(source)
+        }
+      })
+      responseArray.push(incident)
     })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json({ message: 'Request Error' });
-    });
+    console.log(responseArray)
+    res.json(responseArray)
+    
+  } catch (e) {
+    res.status(500).json({ message: 'Request Error' });
+  }
 });
 
 router.post('/createincidents', validateIncidents, (req, res) => {
   req.body.forEach((incident) => {
-    console.log('incident', incident);
     Incidents.createIncident(incident)
 
       .then((post) => {
         res.status(201).json(post);
       })
       .catch((err) => {
-        console.log(err);
         res.status(500).json({ message: 'Error creating Record' });
       });
   });
 });
 
+// ###Sources Routes###
 router.get('/sources', (req, res) => {
   Incidents.getAllSources()
     .then((response) => {
@@ -48,6 +54,27 @@ router.get('/sources', (req, res) => {
     });
 });
 
+// returns all sources associated with incident ID provided
+router.get('/sources/:id', (req, res) => {
+  const { id } = req.params;
+  Incidents.getSourcesById(id).then((response) => {
+    res.json(response);
+  });
+});
+
+router.post('/createsource', (req, res) => {
+  Incidents.createSingleSource(req.body)
+    .then((response) => {
+      // console.log("jason post", response)
+      res.json(response);
+    })
+    .catch((error) => {
+      console.log('jason post error', error);
+    });
+});
+
+
+// ###Types of Force (tags) Routes###
 router.get('/tags', (req, res) => {
   Incidents.getAllTags()
     .then((response) => {
