@@ -54,36 +54,22 @@ Our team is developing an interactive map that identifies instances of police us
 
 #### 🚫 back end framework goes here (link to BE REPO)
 ### dependencies
-    "@okta/jwt-verifier": "^1.0.0",
-    "axios": "^0.19.2",
-    "cookie-parser": "~1.4.4",
-    "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "dotenv": "^8.2.0",
-    "express": "^4.16.4",
-    "faker": "^4.1.0",
-    "helmet": "^3.23.1",
-    "http-errors": "~1.6.3",
-    "knex": "^0.21.6",
-    "morgan": "~1.9.1",
-    "pg": "^8.2.1",
-    "swagger-jsdoc": "^4.0.0",
-    "swagger-ui-express": "^4.1.4"
-### devDependencies 
-    "cross-env": "^7.0.2",
-    "eslint": "^7.3.1",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jest": "^23.17.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "jest": "^25.2.4",
-    "nodemon": "^2.0.4",
-    "prettier": "^2.0.5",
-    "supertest": "^4.0.2"
+    @okta/jwt-verifier: ^1.0.0
+    axios: ^0.19.2
+    cookie-parser: ~1.4.4
+    cors: ^2.8.5
+    debug: ~2.6.9
+    dotenv: ^8.2.0
+    express: ^4.16.4
+    faker": ^4.1.0
+    helmet": ^3.23.1
+    http-errors: ~1.6.3
+    knex: ^0.21.6
+    morgan: ~1.9.1
+    pg: ^8.2.1
+    swagger-jsdoc: ^4.0.0
+    swagger-ui-express: ^4.1.4
+
   
 ### incidents table 
 
@@ -315,7 +301,11 @@ Tweepy is a Python library that allows users to access the Twitter API. We used 
 
 In order for the app to function correctly, the user must set up their own environment variables. There should be a .env file containing the following:
 
-    *  REACT_APP_MAPBOX_TOKEN=
+OKTA_URL_ISSUER = https://auth.lambdalabs.dev/oauth2/default
+
+OKTA_CLIENT_ID = 0oalwp37fU2aV9UEG4x6
+
+DATABASE_URL = postgres://ugkakqld:oZSXjtaGFA1r1psfCfIfv1ZEJID1j4KM@raja.db.elephantsql.com:5432/ugkakqld?ssl=true
 
 # Testing
 
