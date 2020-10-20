@@ -22,7 +22,6 @@ router.get('/showallincidents', async (req, res) => {
       })
       responseArray.push(incident)
     })
-    console.log(responseArray)
     res.json(responseArray)
     
   } catch (e) {
@@ -65,11 +64,10 @@ router.get('/sources/:id', (req, res) => {
 router.post('/createsource', (req, res) => {
   Incidents.createSingleSource(req.body)
     .then((response) => {
-      // console.log("jason post", response)
       res.json(response);
     })
     .catch((error) => {
-      console.log('jason post error', error);
+      res.status(500).json(error)
     });
 });
 
