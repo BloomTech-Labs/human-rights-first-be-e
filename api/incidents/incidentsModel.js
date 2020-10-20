@@ -10,7 +10,7 @@ module.exports = {
 };
 
 async function getAllIncidents() {
-  return await db('incidents').where('incident_id', 1)
+  return await db('incidents')
 }
 
 // async function getSources(incidents) {
