@@ -125,7 +125,7 @@ Our team is developing an interactive map that identifies instances of police us
 ```
 #### Responses:
 
-> Will receive a **200 (OK)** response with an array of incidents if the request is successful
+>/showallincidents Will receive a **200 (OK)** response with an array of incidents if the request is successful
 
 ```javascript
 [
@@ -163,7 +163,7 @@ Our team is developing an interactive map that identifies instances of police us
 
 ---
 
-> Will receive a **201 (Created)** response along wtih the newly created incident if successful
+>/createincidents Will receive a **201 (Created)** response along wtih the newly created incident if successful
 
 ```javascript
 [
@@ -190,7 +190,7 @@ Our team is developing an interactive map that identifies instances of police us
 ```
 ---
 
-> Will receive a **200 (OK)** response with an array of sources if the request is successful
+>/sources Will receive a **200 (OK)** response with an array of sources if the request is successful
 
 ```javascript
 [
@@ -224,7 +224,7 @@ Our team is developing an interactive map that identifies instances of police us
 ```
 
 ---
-> Will receive a **200 (OK)** response with an array of tags if the request is successful
+>/tags Will receive a **200 (OK)** response with an array of tags if the request is successful
 
 ```javascript
 [
@@ -255,7 +255,7 @@ Our team is developing an interactive map that identifies instances of police us
 ```
 
 ---
-> Will receive a **200 (OK)** response with an array of tagtypes if the request is successful
+>/tagtypes Will receive a **200 (OK)** response with an array of tagtypes if the request is successful
 
 ```javascript
 [
@@ -281,6 +281,48 @@ Our team is developing an interactive map that identifies instances of police us
   "message": "Request Error"
 }
 ```
+>/sources/:id Will receive a **200 (OK)** response with an array of tagtypes if the request is successful
+
+```javascript
+[
+  {
+    "src_id": "Test",
+    "incident_id": "Test",
+    "src_url": "test",
+    "src_type": "test"
+  },
+];
+```
+> Will receive a **500 (Internal Server Error)** response if there is an issue with grabing the data
+
+```javascript
+{
+  "message": "Request Error"
+}
+```
+
+>/createsource Will receive a **201 (Created)** response along wtih the newly created incident if successful
+
+```javascript
+[
+    "src_id": "Test",
+    "incident_id": "Test",
+    "src_url": "test",
+    "src_type": "test"
+  },
+];
+```
+
+> Will receive a **500 (Internal Server Error)** response if there is an issue with the API server
+
+```javascript
+{
+    "message": "Error creating Record"
+}
+```
+---
+
+
 
 ---
 # APIs
